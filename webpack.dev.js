@@ -1,6 +1,7 @@
 const path = require('path');
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 
 module.exports = {
     devtool: 'eval-cheap-module-source-map',
@@ -82,6 +83,11 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: './index.html',
             inject: true
+        }),
+        new BrowserSyncPlugin({
+            host: 'localhost',
+            port: 3000,
+            server: { baseDir: ['dist'] }
         })
     ]
 };

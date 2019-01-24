@@ -2,17 +2,19 @@
 
 
 ::-webkit-input-placeholder {
-    color: #fff;
+    color: #fff !important;
 }
 
 /* Firefox 4-18 */
 :-moz-placeholder {
-    color: #fff;
+    color: #fff !important;
+    opacity: 1
 }
 
 /* Firefox 19-50 */
 ::-moz-placeholder {
-    color: #fff;
+    color: #fff !important;
+    opacity: 1
 }
 
 /* - Internet Explorer 10–11
@@ -328,7 +330,7 @@ textarea.opacity {
 }
 
 ul.checklist {
-    margin: 40px;
+    margin: 40px auto;
     list-style: none;
 
     li {
@@ -447,8 +449,24 @@ ul.checklist {
 
 
 @media screen and(max-width: 500px) {
+
+    .btn {
+        &.opactity,
+        &.opactity:active {
+            padding: 25px 55px;
+        }    
+    }
+
     .slick-custom-arrow-sm {
         bottom: 3.5em;
+    }
+
+    ul.checklist {
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 28px;
     }
 }
 
