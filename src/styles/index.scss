@@ -485,6 +485,7 @@ header {
             transition: .2s ease-in;
             border: 1px solid transparent;
             border-top-width: 4px; 
+            margin: 0 auto;
 
             &:hover,
             &:active {
@@ -703,8 +704,16 @@ footer {
 }
 
 @media screen and(max-width: 1200px ) {
-    #packages__section .packages__wrapper .package__container ul {
-        border-color: $blue;
+    #packages__section {
+        .packages__wrapper {
+            .package__container {
+                max-width: 400px;
+
+                ul {
+                    border-color: $blue;
+                }
+            }
+        }
     }
 }
 
@@ -764,7 +773,6 @@ footer {
     #packages__section {
         .packages__wrapper {
             .package__container {
-                max-width: 450px;
                 margin: 10px auto 0;
                 border-color: $blue;
             }
