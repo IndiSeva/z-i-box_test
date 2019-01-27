@@ -251,7 +251,8 @@ header {
 
                     &::before {
                         content: '\f00c';
-                        font-family: FontAwesome;
+                        font-family: 'Font Awesome 5 Free';
+                        font-weight: 900;
                         color: red;
                         position: absolute;
                         left: -40px;
@@ -640,6 +641,7 @@ header {
                 margin-top: 70px; 
                 margin-right: 45px;
                 font-size: 14px;
+                line-height: 1.4;
                 font-weight: bold;
                 text-transform: uppercase;
             }
@@ -798,7 +800,8 @@ footer {
 
                 &::before {
                     content: "\f0d8";
-                    font-family: FontAwesome;
+                    font-family: 'Font Awesome 5 Free';
+                    font-weight: 900;
                     width: 100%;
                     padding: .5em 0;
                     top: -3.5em;
@@ -927,6 +930,18 @@ footer {
         }
     }
 
+    #about-conference__section {
+        .conference-program {
+            .background {
+                height: 300px;
+            }
+
+            .program-details__container ul {
+                padding: 0 0 0 53px;      
+            }
+        }
+    }
+
     #conference-shedule__section {
         .program-shedule { 
             padding: 0 15px;
@@ -961,7 +976,8 @@ footer {
 
             &::before {
                 content: "\f0d8";
-                font-family: FontAwesome;
+                font-family: 'Font Awesome 5 Free';
+                font-weight: 900;
                 width: 90%;
                 padding: .5em 0;
                 top: 15em;
@@ -1004,13 +1020,26 @@ footer {
         }
     }
 
-    #contacts__section {
-        .contacts__container {
-            ul {
-                width: 80%;
-                padding: 0 .5em !important;
-            }
+    #faq__section {
+        .content {
+            padding: 0;
         }
+    }
+
+    #contacts__section {
+        margin-top: 60px; 
+        
+        .contacts-wrapper {
+            .background {
+                height: 300px;
+            }
+            .contacts__container {
+                ul {
+                    width: 80%;
+                    padding: 0 .5em !important;
+                }
+            }
+        }   
     }
 
     .slider-section .speakers__slider .img-container {

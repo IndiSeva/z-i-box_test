@@ -1,14 +1,11 @@
 import 'normalize.css/normalize.css';
 import 'bootstrap/dist/css/bootstrap.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 import './styles/index.scss';
 
 import 'jquery';
 import 'bootstrap';
 import 'slick-carousel';
-import '@fortawesome/fontawesome-free/js/fontawesome'
-import '@fortawesome/fontawesome-free/js/solid'
-import '@fortawesome/fontawesome-free/js/regular'
-import '@fortawesome/fontawesome-free/js/brands'
 
 
 $(function () {
@@ -147,7 +144,7 @@ $(function () {
     nextArrow: '.slick-custom-next'
   });
 
-
+  
   // Helpers
   //////////////////////////
 

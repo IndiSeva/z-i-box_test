@@ -23,10 +23,39 @@
     color: #fff !important;
 }
 
-ul li {
-    list-style-image: url(data:0);
+
+
+.grey-c {
+    color: $grey !important
 }
 
+.grey-b {
+    color: $grey !important
+}
+
+.blue-c {
+    color: $blue !important
+}
+
+.blue-b {
+    color: $blue !important
+}
+
+.light-grey-c {
+    color: $lightGrey !important
+}
+
+.light-grey-b {
+    color: $lightGrey !important
+}
+
+.strong-grey-c {
+    color: $strongGrey !important
+}
+
+.strong-grey-b {
+    color: $strongGrey !important
+}
 
 
 .navbar-toggle {
@@ -173,6 +202,14 @@ h3 {
     text-transform: uppercase;
 }
 
+ul li {
+    list-style-image: url(data:0);
+}
+
+.cbalink {
+    display: none !important;
+}
+
 
 .describe-h2 {
     font-size: 14px; 
@@ -288,7 +325,8 @@ h3 {
 
         &::after {
             content: "\f0d8";
-            font-family: FontAwesome;
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
             position: absolute;
             right: 21px;
             color: red;
@@ -338,7 +376,8 @@ ul.checklist {
 
         &::before {
             content: '\f00c';
-            font-family: FontAwesome;
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
             color: red;
             position: absolute;
             left: -40px;
@@ -467,6 +506,11 @@ ul.checklist {
 
     h2 {
         font-size: 28px;
+    }
+
+    .panel-default {
+        border-left: none;
+        border-right: none;
     }
 }
 
